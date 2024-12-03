@@ -43,7 +43,7 @@ export function FormResult({ data }: FormResultProps) {
     }
   };
 
-  const iconStyle = {
+  const iconStyle: React.CSSProperties = {
     borderStyle: "solid",
     borderWidth: "0px",
     float: "left",
@@ -53,13 +53,13 @@ export function FormResult({ data }: FormResultProps) {
     width: "20px",
   };
 
-  const tableStyle = {
+  const tableStyle: React.CSSProperties = {
     verticalAlign: "-webkit-baseline-middle",
     fontSize: "small",
     fontFamily: "Arial",
   };
 
-  const linkStyle = {
+  const linkStyle: React.CSSProperties = {
     textDecoration: "none",
     color: "rgb(21, 41, 72)",
   };
@@ -77,7 +77,7 @@ export function FormResult({ data }: FormResultProps) {
               border={0}
               cellPadding="0"
               cellSpacing="0"
-              style={{ tableStyle }}
+              style={tableStyle}
             >
               <tbody>
                 <tr>
@@ -100,7 +100,7 @@ export function FormResult({ data }: FormResultProps) {
                       border={0}
                       cellPadding="1"
                       cellSpacing="4"
-                      style={{ tableStyle }}
+                      style={tableStyle}
                     >
                       <tbody>
                         <tr>
@@ -120,7 +120,7 @@ export function FormResult({ data }: FormResultProps) {
                               border={0}
                               cellPadding="2"
                               cellSpacing="2"
-                              style={{ tableStyle }}
+                              style={tableStyle}
                             >
                               <tbody>
                                 <tr>
@@ -128,13 +128,13 @@ export function FormResult({ data }: FormResultProps) {
                                     <img
                                       alt="Phone icon"
                                       src="https://i.ibb.co/kQQtHz3/phone.png"
-                                      style={{ iconStyle }}
+                                      style={iconStyle}
                                     />
                                   </td>
                                   <td>
                                     <a
                                       href={"tel:" + data.phoneNumber}
-                                      style={{ linkStyle }}
+                                      style={linkStyle}
                                     >
                                       <small>{data.phoneNumber}</small>
                                     </a>
@@ -145,13 +145,13 @@ export function FormResult({ data }: FormResultProps) {
                                     <img
                                       alt="Email icon"
                                       src="https://i.ibb.co/r48SNmt/mail.png"
-                                      style={{ iconStyle }}
+                                      style={iconStyle}
                                     />
                                   </td>
                                   <td>
                                     <a
                                       href={"mailto:" + data.email}
-                                      style={{ linkStyle }}
+                                      style={linkStyle}
                                     >
                                       <small>{data.email}</small>
                                     </a>
@@ -162,11 +162,11 @@ export function FormResult({ data }: FormResultProps) {
                                     <img
                                       alt="address icon"
                                       src="https://i.ibb.co/16RDmSn/address.png"
-                                      style={{ iconStyle }}
+                                      style={iconStyle}
                                     />
                                   </td>
                                   <td>
-                                    <small style={{ linkStyle }}>
+                                    <small style={linkStyle}>
                                       {data.address}
                                     </small>
                                   </td>
@@ -176,14 +176,14 @@ export function FormResult({ data }: FormResultProps) {
                                     <img
                                       alt="url icon"
                                       src="https://i.ibb.co/KVT9SXr/site.png"
-                                      style={{ iconStyle }}
+                                      style={iconStyle}
                                     />
                                   </td>
                                   <td>
                                     <a
                                       href={data.url}
                                       target="_blank"
-                                      style={{ linkStyle }}
+                                      style={linkStyle}
                                     >
                                       <small> {data.url}</small>
                                     </a>
