@@ -85,7 +85,7 @@ export function FormResult({ data }: FormResultProps) {
                   <td style={{ paddingRight: "16px" }}>
                     <img
                       alt="Suny logo"
-                      src="https://i.ibb.co/XVLs5zF/suny-v3.gif"
+                      src="https://i.ibb.co/bW9Gfv2/suny-logo-150.gif"
                       style={{
                         borderStyle: "solid",
                         borderWidth: "0px",
