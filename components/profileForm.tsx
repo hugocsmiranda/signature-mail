@@ -24,7 +24,7 @@ export function ProfileForm({ onSubmit }: ProfileFormProps) {
     defaultValues: {
       name: "",
       job: "",
-      phoneNumber: "+33",
+      phoneNumber: "0033",
       email: "",
       address: "70, Rue de Ponthieu, 75008 Paris",
       url: "http://www.sunymanagement.com",
@@ -34,7 +34,7 @@ export function ProfileForm({ onSubmit }: ProfileFormProps) {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="w-full space-y-8">
+      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
         <FormField
           control={form.control}
           name="name"
