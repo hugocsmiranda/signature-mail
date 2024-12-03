@@ -56,12 +56,13 @@ export function FormResult({ data }: FormResultProps) {
   const tableStyle: React.CSSProperties = {
     verticalAlign: "-webkit-baseline-middle",
     fontSize: "small",
-    fontFamily: "Arial",
+    fontFamily: "Poppins, Helvetica, Arial, sans-serif",
   };
 
   const linkStyle: React.CSSProperties = {
     textDecoration: "none",
-    color: "rgb(21, 41, 72)",
+    color: "#152948",
+    fontFamily: "Poppins, Helvetica, Arial, sans-serif",
   };
 
   return (
@@ -107,14 +108,29 @@ export function FormResult({ data }: FormResultProps) {
                       <tbody>
                         <tr>
                           <td>
-                            <strong style={{ fontWeight: "bold" }}>
+                            <strong
+                              style={{
+                                fontWeight: "bold",
+                                color: "#152948",
+                                fontFamily:
+                                  "Poppins, Helvetica, Arial, sans-serif",
+                              }}
+                            >
                               {data.name}
                             </strong>
                           </td>
                         </tr>
                         <tr>
                           <td style={{ paddingBottom: "16px" }}>
-                            <em>{data.job}</em>
+                            <em
+                              style={{
+                                color: "#152948",
+                                fontFamily:
+                                  "Poppins, Helvetica, Arial, sans-serif",
+                              }}
+                            >
+                              {data.job}
+                            </em>
                           </td>
                         </tr>
                         <tr>
