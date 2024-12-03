@@ -7,9 +7,8 @@ export const formSchema = z.object({
   job: z
     .string()
     .min(2, { message: "Le poste doit contenir au moins 2 caractères." }),
-  phoneNumber: z.string().regex(/^\+?\d(\d|\s)*$/, {
-    message:
-      "Le numéro de téléphone peut commencer par un '+', et doit contenir uniquement des chiffres et des espaces.",
+  phoneNumber: z.string().regex(/^\d{10,13}$/, {
+    message: "Le numéro de téléphone doit contenir entre 10 et 13 chiffres.",
   }),
   email: z
     .string()
