@@ -43,9 +43,6 @@ export function FormResult({ data }: FormResultProps) {
     }
   };
 
-  const hrefStyle = { textDecoration: "none", color: "#152948" };
-  const iconStyle = { width: "32px" };
-
   return (
     <div className="w-1/2 p-4 rounded-md flex flex flex-col">
       {data ? (
@@ -55,8 +52,8 @@ export function FormResult({ data }: FormResultProps) {
 
             <table
               ref={tableRef}
-              cellpadding="0"
-              cellspacing="0"
+              cellPadding="0"
+              cellSpacing="0"
               border={0}
               style={{
                 verticalAlign: "-webkit-baseline-middle",
@@ -66,7 +63,7 @@ export function FormResult({ data }: FormResultProps) {
             >
               <tbody>
                 <tr>
-                  <td rowspan="7" style={{ verticalAlign: "top" }}>
+                  <td rowSpan={7} style={{ verticalAlign: "top" }}>
                     <img
                       alt="SUNY Logo"
                       src="https://i.ibb.co/XVLs5zF/suny-v3.gif"
@@ -78,16 +75,16 @@ export function FormResult({ data }: FormResultProps) {
                     />
                   </td>
                   <td
-                    rowspan="7"
+                    rowSpan={7}
                     style={{ width: "16px", borderRight: "1px solid #152948" }}
                   >
                     &nbsp;
                   </td>
-                  <td rowspan="7" style={{ width: "16px" }}>
+                  <td rowSpan={7} style={{ width: "16px" }}>
                     &nbsp;
                   </td>
                   <td
-                    colspan="2"
+                    colSpan={2}
                     style={{
                       height: "24px",
                       fontFamily: "sans-serif",
@@ -109,7 +106,7 @@ export function FormResult({ data }: FormResultProps) {
                 </tr>
                 <tr>
                   <td
-                    colspan="2"
+                    colSpan={2}
                     style={{ height: "24px", fontFamily: "sans-serif" }}
                   >
                     <em
@@ -126,7 +123,7 @@ export function FormResult({ data }: FormResultProps) {
                 </tr>
                 <tr>
                   <td
-                    colspan="2"
+                    colSpan={2}
                     style={{ marginLeft: "16px", height: "24px" }}
                   >
                     &nbsp;
