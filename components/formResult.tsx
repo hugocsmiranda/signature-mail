@@ -81,7 +81,7 @@ export function FormResult({ data }: FormResultProps) {
             >
               <tbody>
                 <tr>
-                  <td>
+                  <td style={{ paddingRight: "16px" }}>
                     <img
                       alt="Suny logo"
                       src="https://i.ibb.co/XVLs5zF/suny-v3.gif"
@@ -93,8 +93,10 @@ export function FormResult({ data }: FormResultProps) {
                       }}
                     />
                   </td>
-                  <td>&nbsp;</td>
-                  <td>
+                  <td style={{ borderLeft: "1px solid rgb(21, 41, 72)" }}>
+                    &nbsp;
+                  </td>
+                  <td style={{ paddingLeft: "16px" }}>
                     <table
                       align="left"
                       border={0}
@@ -105,11 +107,13 @@ export function FormResult({ data }: FormResultProps) {
                       <tbody>
                         <tr>
                           <td>
-                            <strong>{data.name}</strong>
+                            <strong style={{ fontWeight: "bold" }}>
+                              {data.name}
+                            </strong>
                           </td>
                         </tr>
                         <tr>
-                          <td>
+                          <td style={{ paddingBottom: "16px" }}>
                             <em>{data.job}</em>
                           </td>
                         </tr>
